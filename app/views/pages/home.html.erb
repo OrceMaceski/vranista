@@ -1,6 +1,6 @@
 <div>
 <iframe
-    src="https://player.twitch.tv/?channel=cyberlivearena1&parent=localhost"
+    src="https://player.twitch.tv/?channel=<%= ENV['TWITCH_CHANNEL']%>&parent=<%= ENV['TWITCH_DOMAIN'] || 'localhost' %>"
     height="600"
     width="800"
     allowfullscreen="true">
