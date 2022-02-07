@@ -1,8 +1,8 @@
-<div>
-<iframe
-    src="https://player.twitch.tv/?channel=<%= ENV['TWITCH_CHANNEL']%>&parent=<%= ENV['TWITCH_DOMAIN'] || 'localhost' %>"
-    height="600"
-    width="800"
-    allowfullscreen="true">
-</iframe>
+<div class='flex justify-center items-center'>
+    <iframe
+        src="https://player.twitch.tv/?channel=<%= ENV['TWITCH_CHANNEL']%>&parent=<%= ENV['TWITCH_DOMAIN'] || 'localhost' %>"
+        height="600"
+        width="800"
+        allowfullscreen="true">
+    </iframe>
 </div>
