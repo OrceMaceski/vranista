@@ -13,7 +13,6 @@ AllCops:
     - 'config/**/*'
     - 'node_modules/**/*'
     - 'vendor/**/*'
-    - 'Gemfile'
     - 'Rakefile'
     - 'config.ru'
 
