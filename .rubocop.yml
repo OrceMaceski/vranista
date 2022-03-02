@@ -1,0 +1,38 @@
+require:
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  DisplayCopNames: true
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  Exclude:
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'Rakefile'
+    - 'config.ru'
+
+Metrics/BlockLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 15
+
+Rails/I18nLocaleAssignment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 25
+
+RSpec/MultipleExpectations:
+  Max: 4
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 9

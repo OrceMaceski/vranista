@@ -61,3 +61,15 @@ jobs:
           bin/rails db:test:prepare
           bin/rails test
           bin/rails test:system
+  rubocop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Run rubocop
+        run: |
+          bundle exec rubocop
