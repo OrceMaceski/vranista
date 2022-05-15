@@ -1,8 +1,30 @@
+<!--
 <div class='flex justify-center items-center'>
     <iframe
-        src="https://player.twitch.tv/?channel=<%= ENV['TWITCH_CHANNEL']%>&parent=<%= ENV['TWITCH_DOMAIN'] || 'localhost' %>"
+        src="https://player.twitch.tv/?channel=<%#= ENV['TWITCH_CHANNEL']%>&parent=<%= ENV['TWITCH_DOMAIN'] || 'localhost' %>"
         height="600"
         width="800"
         allowfullscreen="true">
     </iframe>
+</div>
+-->
+<div class='flex justify-center items-center'>
+    <iframe
+        width="1020"
+        height="630"
+        src="https://www.youtube.com/embed/FMJQKx8OWIU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+        allowfullscreen>
+    </iframe>
+    <%# <iframe
+        width="1020"
+        height="630"
+        src="https://www.youtube.com/embed/FMJQKx8OWIU?controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe> %>
 </div>
