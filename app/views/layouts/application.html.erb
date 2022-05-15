@@ -12,10 +12,12 @@
   </head>
 
   <body>
-    <%= render '/layouts/navbar' %>
-    <main class="container mx-auto mt-8 px-5">
-      <%= yield %>
-    </main>
-    <%= render '/layouts/footer' %>
+    <div class="flex flex-col h-screen justify-between">
+      <%= render '/layouts/navbar' %>
+      <main class="container mx-auto mt-8 px-5">
+        <%= yield %>
+      </main>
+      <%= render '/layouts/footer' %>
+    </div>
   </body>
 </html>
