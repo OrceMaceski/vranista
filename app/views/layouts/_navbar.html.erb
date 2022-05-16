@@ -1,15 +1,13 @@
-<nav class="flex flex-col sm:flex-row sm:h-20 px-6 bg-blue-500 border-b border-gray-300 relative z-50">
-	<div class="h-20 w-full flex items-center justify-between sm:h-auto">
-		<a class="no-underline block h-8">LOGO</a>
-		<div class="items-center flex">
-			<div class="cursor-pointer my-2 ml-6 relative rounded-full w-12 h-12">
-        <%= image_tag("logo.jpg", width: 100) %>
-			</div>
+<nav class="container flex justify-around py-8 mx-auto bg-white">
+    <div>
+		<div class="cursor-pointer my-2 ml-6 relative rounded-full w-12 h-12">
+			<%= image_tag("logo.jpg", width: 100) %>
 		</div>
 	</div>
-	<div class="w-full mx-auto mt-2 mb-4 sm:mx-0 sm:mb-0 sm:mt-0 sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:w-1/2 sm:h-full justify-center items-center block sm:flex">
-		<form class="relative w-full">
-			<input type="search" class="w-full max-w-full border border-gray-300 rounded-sm pr-4 pl-10 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400" placeholder="Search for something..." />
-		</form>
-	</div>
+    <div class="space-x-8">
+		<a href="">Home</a>
+		<a href="">About Us</a>
+		<a href="">Our Team</a>
+		<a href="">Contact Us</a>
+    </div>
 </nav>
