@@ -15,6 +15,7 @@
     <div class="flex flex-col h-screen justify-between">
       <%= render '/layouts/navbar' %>
       <main class="container mx-auto mt-8 px-5">
+      <p class="text-green-500 text-center my-4"><%= notice %><%= alert %></p>
         <%= yield %>
       </main>
       <%= render '/layouts/footer' %>
