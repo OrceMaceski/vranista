@@ -1,20 +1,24 @@
 # frozen_string_literal: true
 
 class PagesController < ApplicationController
-  def home; end
+  def home
+    @youtube = Youtube.last.link || 'https://www.youtube.com/embed/FMJQKx8OWIU'
+  end
 
   def about; end
 
+  def our_team; end
+
   def contact
+    @contact = Contact.new
   end
-  @contact = Contact.new
 
   def create_contact
     @contact = Contact.new(contact_params)
     if @contact.save
-      redirect_to root_path, notice: 'Message sent!'
+      redirect_to root_path, notice: t('message.sent')
     else
-      render :contact, alert: 'Error sending message.'
+      render :contact, alert: t('alert.sent')
     end
   end
 

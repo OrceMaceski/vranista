@@ -30,4 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  message:
+    sent: "Message sent! "
+  alert:
+    sent: 'Error sending message.'

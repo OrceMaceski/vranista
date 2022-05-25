@@ -80,3 +80,9 @@ gem 'rubocop'
 gem 'rubocop-performance'
 gem 'rubocop-rails'
 gem 'rubocop-rspec'
+
+gem 'activeadmin', '~> 2.13'
+
+gem 'sassc-rails', '~> 2.1'
+
+gem 'devise', '~> 4.8'
