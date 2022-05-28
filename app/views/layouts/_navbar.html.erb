@@ -1,13 +1,15 @@
 <nav class="container flex justify-around py-8 mx-auto bg-white">
     <div>
-		<div class="cursor-pointer my-2 ml-6 relative rounded-full w-12 h-12">
-			<%= image_tag("logo.jpg", width: 100) %>
-		</div>
+		<%= link_to root_path do %>
+			<div class="cursor-pointer my-2 ml-6 relative rounded-full w-12 h-12">
+				<%= image_tag("logo.jpg", width: 100) %>
+			</div>
+		<% end %>
 	</div>
     <div class="space-x-8">
 		<a href="/">Home</a>
-		<a href="#">About Us</a>
-		<a href="#">Our Team</a>
+		<a href="/pages/about">About Us</a>
+		<a href="/pages/our_team">Our Team</a>
 		<a href="/pages/contact">Contact Us</a>
     </div>
 </nav>

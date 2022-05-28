@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'pages/home'
   get 'pages/about'
+  get 'pages/our_team'
   get 'pages/contact'
   post 'pages/create_contact', to: 'pages#create_contact'
   root 'pages#home'
