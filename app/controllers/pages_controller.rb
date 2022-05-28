@@ -2,7 +2,7 @@
 
 class PagesController < ApplicationController
   def home
-    @youtube = Youtube.last.link || 'https://www.youtube.com/embed/FMJQKx8OWIU'
+    @youtube = Youtube.last&.link || 'https://www.youtube.com/embed/FMJQKx8OWIU'
   end
 
   def about; end
