@@ -332,5 +332,5 @@ ActiveAdmin.setup do |config|
   # You can switch to using Webpacker here.
   #
   # config.use_webpacker = true
-  config.skip_before_action :verify_authenticity_token
+  config.skip_before_action :verify_authenticity_token #fix this with the hosting provider
 end

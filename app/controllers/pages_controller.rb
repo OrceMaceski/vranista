@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class PagesController < ApplicationController
+  skip_before_action :verify_authenticity_token # fix this with the hosting provider
   def home
     @youtube = Youtube.last&.link || 'https://www.youtube.com/embed/NoK6t3zZFsU'
   end
