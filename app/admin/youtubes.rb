@@ -6,7 +6,7 @@ ActiveAdmin.register Youtube do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :link, :description
+  permit_params :link, :description
   #
   # or
   #
