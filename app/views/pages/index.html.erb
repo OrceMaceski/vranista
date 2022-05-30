@@ -1,0 +1,12 @@
+<h1 class="text-center mb-8">Videos</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<% @videos.each do |video| %>
+    <div class="flex flex-col items-center ">
+        <%= link_to page_path(video) do %>
+            <div class="w-64 md:w-96"><%= image_tag("yt.jpg", size: "440x175") %></div>
+        <% end %>
+        <div><%= video.description %></div>
+    </div>
+<% end %>
+</div>

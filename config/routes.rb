@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'pages/our_team'
   get 'pages/contact'
   post 'pages/create_contact', to: 'pages#create_contact'
+  resources :pages, only: %i[index show]
   root 'pages#home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

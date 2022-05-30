@@ -8,6 +8,14 @@ class PagesController < ApplicationController
 
   def about; end
 
+  def index
+    @videos = Video.all
+  end
+
+  def show
+    @video = Video.find(params[:id])
+  end
+
   def our_team; end
 
   def contact
