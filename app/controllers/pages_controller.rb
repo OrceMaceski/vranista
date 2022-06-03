@@ -24,7 +24,7 @@ class PagesController < ApplicationController
 
   def create_contact
     @contact = Contact.new(contact_params)
-    if @contact.save
+    if verify_recaptcha(model: @contact) && @contact.save
       redirect_to root_path, notice: t('message.sent')
     else
       render :contact, alert: t('alert.sent')
