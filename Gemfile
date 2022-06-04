@@ -87,4 +87,4 @@ gem 'sassc-rails', '~> 2.1'
 
 gem 'devise', '~> 4.8'
 
-gem "recaptcha", "~> 5.10"
+gem 'recaptcha', '~> 5.10'
